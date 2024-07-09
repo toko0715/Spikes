@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tienda de Productos</h1>
+    <div class="product" data-id="1" data-price="229">
+        <h2>Logitech G Pro Mouse Inalámbrico – League of Legends</h2>
+        <p>S/229</p>
+        <button class="add-to-cart">Comprar</button>
+    </div>
+    <div class="product" data-id="2" data-price="299.90">
+        <h2>Teclado Primus Ballista 90t Darth Vader Switch Red Color</h2>
+        <p>S/299.90</p>
+        <button class="add-to-cart">Comprar</button>
+    </div>
+    <div class="product" data-id="3" data-price="329.90">
+        <h2>Mando Dualshock PS4</h2>
+        <p>S/329.90</p>
+        <button class="add-to-cart">Comprar</button>
+    </div>
+    <div class="product" data-id="4" data-price="2329.90">
+        <h2>Silla Gamer Razer Iskur V2 - Negro</h2>
+        <p>S/2329.90</p>
+        <button class="add-to-cart">Comprar</button>
+    </div>
+    <div class="product" data-id="5" data-price="309.90">
+        <h2>Fifine AM8 Micrófono - Negro</h2>
+        <p>S/309.90</p>
+        <button class="add-to-cart">Comprar</button>
+    </div>
+    <div class="product" data-id="6" data-price="2699.90">
+        <h2>Xbox Series X Consola 1 TB</h2>
+        <p>S/2699.90</p>
+        <button class="add-to-cart">Comprar</button>
+    </div>
+
+    <h2>Carrito de Compras</h2>
+    <div id="cart"></div>
+    <button id="checkout">Pagar</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Formulario de Pago</h2>
+            <form id="payment-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="address" required>
+                <label for="card">Número de Tarjeta:</label>
+                <input type="text" id="card" name="card" required>
+                <label for="expiry">Fecha de Expiración:</label>
+                <input type="text" id="expiry" name="expiry" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+                <button type="submit">Enviar Pago</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
