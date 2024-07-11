@@ -54,7 +54,6 @@ El sitio web está dirigido a consumidores interesados en periféricos y tecnolo
     git clone https://github.com/toko0715/Spikes
     cd Spikes
     
-    //creado por: Jheremy Strong
 ## 5. Estructura del Proyecto
 
 spikes/
